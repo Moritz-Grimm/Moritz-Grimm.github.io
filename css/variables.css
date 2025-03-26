@@ -1,0 +1,17 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --font-family: Arial, Helvetica, sans-serif;
+    
+    /* Schriftgrößen */
+    --font-small: 0.8rem;
+    --font-normal: 1rem;
+    --font-large: 1.2rem;
+    
+    /* Abstände */
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 30px;
+}

@@ -1,0 +1,17 @@
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    gap: var(--spacing-medium);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,99 @@
+/* General */
+.hyperlink {
+    text-decoration: none;
+    border: none;
+}
+
+
+/* Header */
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #ddd;
+}
+
+
+/* Main Section */
+main section h2 {
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: var(--secondary-color);
+}
+
+nav ul {
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    display: inline-block;
+}
+
+.nav-item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+
+/* My Projects */
+.project-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+.project-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+
+/* Icon Links */
+.icon-link {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.icon-link svg{
+    width: 35px;
+    height: 35px;
+    fill: black;
+}
+
+.icon-link:hover svg {
+    transition: all 0.3s ease;
+    transform: scale(1.2);
+}
