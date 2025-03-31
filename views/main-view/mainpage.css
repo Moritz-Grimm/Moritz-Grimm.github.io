@@ -1,0 +1,196 @@
+body {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    height: 75vh;
+    margin: 0;
+    font-family: monospace;
+    overflow-x: hidden;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .hero-content {
+        margin-left: 1rem;
+        padding: 0 1rem;
+    }
+
+    #welcomeText {
+        margin-left: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        height: auto;
+    }
+
+    .hero {
+        padding: 2rem 0;
+    }
+}
+
+/* Top Navigation Bar */
+.topnav {
+    background-color: transparent;
+    overflow: hidden;
+    position: fixed;
+    color: white;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.topnav a {
+    float: left;
+    color: white;
+    padding: 14px 16px;
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    transition: all 0.3s ease-out;
+    transform: scale(1);
+}
+
+.topnav a:hover {
+    transform: scale(1.2);
+}
+
+.topnav a.active {
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+.topnav a.active:hover {
+    transform: scale(1.3);
+}
+
+
+/* Welcome Text */
+#welcomeText {
+    font-size: clamp(2rem, 5vw, 4rem);
+    color: var(--text-color);
+    text-align: left;
+    align-items: flex-start;
+    white-space: pre-wrap;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Star Background */
+.stars-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.star {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+
+/*  Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+} */
+
+.hero-content {
+    text-align: left;
+    margin-left: 2rem;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+h1 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding-top: 15px;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn.primary {
+    background-color: #00AAFF;
+    color: white;
+}
+
+.btn.secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.hero-text {
+    font-size: clamp(8rem, 12vw, 15rem);
+    margin-bottom: 2rem;
+    color: #cccccc;
+}
