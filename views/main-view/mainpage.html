@@ -1,37 +1,50 @@
-<!-- TODO: Implement NavBar only showing when scrolled past the two buttons below the subtitle text -->
-<!-- TODO: Implement the buttons working at all -->
-<!-- TODO: Add a about me button -->
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mainpage</title>
+    <title>Coming Soon™</title>
     <link rel="stylesheet" href="mainpage.css">
 </head>
-<body>
-    <div class="topnav">
-        <a href="https://github.com/Moritz-Grimm/Moritz-Grimm.github.io">
-            <img id="github-logo" src="/assets/icons/github-icon-white.svg" alt="GitHub Logo" class="github-logo">
-        </a> 
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#contact">Contact</a> 
-        <a href="#projects">Projects</a>
-    </div>
 
-    <div class="stars-container" id="starsContainer"></div>
-    <section class="hero">
-        <div class="hero-content">
-            <h1 id="welcomeText" aria-hidden="true"></h1>
-            <h2 id="hero-text" aria-hidden="true"></h2>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn primary">My projects</a>
-                <a href="#contact" class="btn secondary">Contact</a>
-            </div>
+<body>
+    <div class="particles" id="particles"></div>
+
+    <div class="container">
+        <div class="glass-card">
+            <div class="accent-dots"></div>
+            <div class="accent-dots"></div>
+            <div class="accent-dots"></div>
+
+            <h1 class="name">Coming Soon™</h1>
+            <a href="https://github.com/Moritz-Grimm">
+                <button class="button" data-text="Awesome">
+                    <span class="actual-text">&nbsp;GitHub&nbsp;</span>
+                    <span aria-hidden="true" class="hover-text">&nbsp;GitHub&nbsp;</span>
+                </button>
+            </a>
         </div>
-    </section>
-    <script src="mainpage.js"></script>
+    </div>
+    <script>
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 30;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+
+                particle.style.animationDelay = Math.random() * 8 + 's';
+                particle.style.animationDuration = (Math.random() * 4 + 6) + 's';
+
+                particlesContainer.appendChild(particle);
+            }
+        }
+    </script>
 </body>
+
 </html>
